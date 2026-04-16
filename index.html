@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+    <form id="id_formulario">
+        <fieldset>
+
+            <label for="id_nome">Nome:
+                <input 
+                    type="text"
+                    id="id_nome"
+                    placeholder="Informe seu nome"
+                    required
+                >
+            </label>
+            <br>
+
+            <label for="id_telefone">Telefone:
+                <input 
+                    type="telefone"
+                    id="id_telefone"
+                    placeholder="Informe seu telefone para contato"
+                    required
+                >
+            </label>
+            <br>
+        </fieldset>
+
+            <fieldset>
+                <legend>Escolha os ingredientes de sua pizza:</legend>
+
+                 <div class="ingredientes">
+
+                <label for="Queijo">
+                    <input 
+                        type="checkbox"
+                        name="checkbox_tech"
+                        id="Queijo"
+                        value="Queijo"
+                        >Queijo
+                        
+                </label>
+
+                <label for="Calabresa">
+                    <input 
+                        type="checkbox"
+                        name="checkbox_tech"
+                        id="Calabresa"
+                        value="Calabresa"
+                        >Calabresa
+                </label>
+
+                <label for="Presunto">
+                    <input 
+                        type="checkbox"
+                        name="checkbox_tech"
+                        id="Presunto"
+                        value="Presunto"
+                        >Presunto
+                </label>
+
+                 <label for="Frango">
+                    <input 
+                        type="checkbox"
+                        name="checkbox_tech"
+                        id="Frango"
+                        value="Frango"
+                        >Frango
+                </label>
+
+                 <label for="Carne">
+                    <input 
+                        type="checkbox"
+                        name="checkbox_tech"
+                        id="Carne"
+                        value="Carne"
+                        >Carne
+                </label>
+                </div>
+            </fieldset>
+
+              <fieldset>
+                <legend>Escolha o tamanho da pizza:</legend>
+
+                <div class="tamanho">
+
+                <label for="Pequena">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="pequena"
+                        value="pequena"
+                        required
+                        >Pequena (4 fatias)
+                        
+                </label>
+
+                <label for="Media">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="media"
+                        value="media"
+                        required
+                        >Média (6 fatias)
+                </label>
+
+                <label for="Grande">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="grande"
+                        value="grande"
+                        required
+                        >Grande (8 fatias)
+                </label>
+
+                 <label for="Familia">
+                    <input 
+                        type="radio"
+                        name="radio_s"
+                        id="familia"
+                        value="familia"
+                        required
+                        >Família (12 fatias)
+                </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o tipo de massa</legend>
+
+                <div class="massa">
+                <select id="id_massa" required>
+                <option value="" disabled selected>Selecione o tipo de massa...</option>
+                <option value="Fina">Massa fina</option>
+                <option value="Grossa">Massa grossa</option>
+                <option value="Recheada">Massa recheada</option>
+                </select>
+            </fieldset>
+
+             <div class="container">
+
+    <form id="id_formulario">
+        <fieldset>
+
+            <label for="id_endereco">Endereço de entrega:
+                <input 
+                    type="text"
+                    id="id_endereco"
+                    placeholder="Informe seu endereço completo"
+                    required
+                >
+            </label>
+            <br>
+
+            <div class="botoes_form">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+            </div>
+        </fieldset>
+    </form>
+
+      <fieldset id="id_resultado">
+            <legend>Dados</legend>
+        </fieldset>
+
+    </div>
+
+    <img src="Sonic.png" id="correndo">
+
+    <script src="script_externo.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body{
+    position: relative;
+    background-image: url("sonicpizza.png");
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.massa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredientes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
+
+.tamanho {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+fieldset{
+    background-color: rgb(172, 87, 87);
+    width: 350px;
+    padding: 25px;
+    border: 3px solid rgb(196, 161, 161);
+    border-radius: 20px;
+    margin: 6px auto;
+}
+
+legend{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+button[type="reset"]{
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+button[type="submit"]{
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 5px;
+}
+
+.botoes_form{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+#id_resultado{
+    position: absolute;
+    top: 410px;
+    right: 100px;
+    width: 200px;
+    padding: 20px;
+    background-color: rgb(172, 87, 87);
+    border: 3px solid rgb(196, 161, 161);
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset{
+    transition: 0.4s;
+}
+
+fieldset:hover{
+    box-shadow: 0 0 20px black;
+}
+
+button{
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+#id_resultado{
+    transform: scale(0);
+    transition: 0.4s ease;
+}
+
+#correndo{
+    position: fixed;
+    bottom: 20px;
+    left: -150px;
+    width: 160px;
+    animation: correr 4s linear infinite;
+}
+
+@keyframes correr {
+    from{
+        left: -150px;
+    }
+    to{
+        left: 110%;
+    }
+}
